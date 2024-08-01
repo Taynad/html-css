@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Astronauta</title>
     <style>
         *{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         }
-        body{
+        #container{
             background-image: url(imagens/espaco.jpg);
-            position: relative;
             background-size: cover;
-        
-        }
-        
-        div.astro {
-            height: 100vh;
             background-position: center center;
+            background-attachment: fixed;
+            position: relative;
+            height: 599px;
+            width: 1360px;
+            
+
+        }
+
+        #conteudo{
+            background-image: url(imagens/astronauta.png);
             position: absolute;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 500px;
+            width: 500px;
+            left:50%;
+            top: 50%;
             transform: translate(-50%, -50%);
-        }
 
-        div.astronauta{
-            width: 320px;
         }
-
-        
-    </style>
-    <title>Desafio Astronauta</title>
+        </style>
 </head>
+
 <body>
-    <div class="astro">
-        <img class="astronauta" src="imagens/astronauta.png" alt="astronauta">
-    </div>
+    <section id="container">
+        <article id="conteudo">
 
-    </section>
-
-    
-    
-    
+        </article>
+    </section>   
 </body>
 </html>
